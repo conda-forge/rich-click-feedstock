@@ -1,5 +1,5 @@
 {% set name = "rich-click" %}
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/ewels/rich-click/archive/v{{ version }}.tar.gz
-  sha256: 74e55790e230ede1d642017810cfde12940a5b831026addb2e82195949ca3359
+  sha256: 2ec411a97d9fbb848906b6f64f535c62217753c015fb9ff950dc4e2cb7de8a72
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - rich-click=rich_click.cli:main
 
@@ -38,7 +38,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Format click help output nicely with rich'
+  summary: Format click help output nicely with rich
   description: |
     Provides attractive help output from click,
     formatted with rich, with minimal customisation required.
