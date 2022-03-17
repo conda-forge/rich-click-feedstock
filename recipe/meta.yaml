@@ -10,7 +10,7 @@ source:
   sha256: 2ec411a97d9fbb848906b6f64f535c62217753c015fb9ff950dc4e2cb7de8a72
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - rich >=10,<12
+    - rich >=10
     - click >=7,<9
 
 test:
@@ -32,6 +32,7 @@ test:
     - pip
   commands:
     - pip check
+    - rich-click --help
 
 about:
   home: https://github.com/ewels/rich-click
