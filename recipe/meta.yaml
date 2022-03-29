@@ -10,7 +10,7 @@ source:
   sha256: b02045c437e807c1c947fddffd1e88acbaef9995205c3725e738fb99faae5158
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -18,10 +18,10 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
+    - python >=3.7
     - rich >=10
     - click >=7,<9
 
