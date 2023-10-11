@@ -1,11 +1,11 @@
-About rich-click
-================
+About rich-click-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rich-click-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ewels/rich-click
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rich-click-feedstock/blob/main/LICENSE.txt)
 
 Summary: Format click help output nicely with rich
 
