@@ -10,7 +10,7 @@ source:
   sha256: 1f5cd1c50bd534fdaf985e1b0b1fec88054244a6e849d8c3e05131d27d5222c9
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -18,10 +18,10 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - rich >=10
     - click >=7,<9
 
@@ -30,6 +30,7 @@ test:
     - rich_click
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
     - rich-click --help
