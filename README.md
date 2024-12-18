@@ -152,4 +152,5 @@ Feedstock Maintainers
 =====================
 
 * [@ewels](https://github.com/ewels/)
+* [@synapticarbors](https://github.com/synapticarbors/)
 
