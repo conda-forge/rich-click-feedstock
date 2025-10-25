@@ -1,5 +1,5 @@
 {% set name = "rich-click" %}
-{% set version = "1.9.3" %}
+{% set version = "1.9.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/ewels/rich-click/archive/v{{ version }}.tar.gz
-  sha256: c5dbb1bc86080a190b8b7f6f9a944e67bdcc62afb1ed9bda0b9acfb852ed688e
+  sha256: 90386ff32f26dcbdef86da816e0c6ca220f2846fa7340971ac283e63fd5f1d3a
 
 build:
   number: 0
