@@ -16,7 +16,6 @@ Documentation: https://github.com/ewels/rich-click
 Provides attractive help output from click,
 formatted with rich, with minimal customisation required.
 
-
 Current build status
 ====================
 
