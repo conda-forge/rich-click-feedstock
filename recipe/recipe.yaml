@@ -30,11 +30,11 @@ requirements:
     - rich >=12
     - click >=8
     - typing-extensions >=4
-    - if win:
+    - if: win
       then: 
         - __win
         - colorama
-    - if unix:
+    - if: unix
       then: __unix
 
 tests:
