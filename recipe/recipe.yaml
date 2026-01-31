@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: rich-click
-  version: 1.9.6
+  version: "1.9.7"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://github.com/ewels/rich-click/archive/v${{ version }}.tar.gz
-  sha256: 790125338becb4e810812cc756e5e8f793ad47f8a3c1f76e6c0bb581562a3319
+  sha256: 6e453d08cdc179821d3f6c3f9368f2facc4390605cda29d5ba9d0f2a5176dda4
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-build-isolation --no-deps
   python:
@@ -31,7 +31,7 @@ requirements:
     - click >=8
     - typing-extensions >=4
     - if: win
-      then: 
+      then:
         - __win
         - colorama
     - if: unix
