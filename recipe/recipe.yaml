@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: rich-click
-  version: "1.9.7"
+  version: "1.9.8"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/ewels/rich-click/archive/v${{ version }}.tar.gz
-  sha256: 6e453d08cdc179821d3f6c3f9368f2facc4390605cda29d5ba9d0f2a5176dda4
+  sha256: 4b515ec866b99d68d2f8454907a04c3c80b6e1db81a21ee8cc0819d9b612e13c
 
 build:
   number: 0
